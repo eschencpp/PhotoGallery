@@ -3,9 +3,11 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Users/echen/AndroidStudioProjects/PhotoGallery/app/src/main/res/drawable/bill_up_close.xml" value="0.195" />
         <entry key="..\:/Users/echen/AndroidStudioProjects/PhotoGallery/app/src/main/res/layout/activity_main.xml" value="0.358695652173913" />
         <entry key="..\:/Users/echen/AndroidStudioProjects/PhotoGallery/app/src/main/res/layout/fragment_photo_gallery.xml" value="0.213768115942029" />
         <entry key="..\:/Users/echen/AndroidStudioProjects/PhotoGallery/app/src/main/res/layout/fragment_photo_gallery2.xml" value="0.14722222222222223" />
+        <entry key="..\:/Users/echen/AndroidStudioProjects/PhotoGallery/app/src/main/res/layout/list_item_gallery.xml" value="0.18697916666666667" />
       </map>
     </option>
   </component>

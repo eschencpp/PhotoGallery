@@ -14,5 +14,6 @@ interface FlickrApi {
                 "&extras=url_s"
 
     )
-    suspend fun fetchPhotos(): String
+    suspend fun fetchPhotos(): FlickrResponse
+
 }
