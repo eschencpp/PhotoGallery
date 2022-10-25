@@ -8,6 +8,7 @@ import android.view.ViewGroup
 import android.webkit.WebChromeClient
 import android.webkit.WebView
 import android.webkit.WebViewClient
+import androidx.activity.OnBackPressedCallback
 import androidx.appcompat.app.AppCompatActivity
 import androidx.fragment.app.Fragment
 import androidx.navigation.fragment.navArgs
@@ -48,10 +49,27 @@ class PhotoPageFragment : Fragment() {
                         val parent = requireActivity() as AppCompatActivity
                         parent.supportActionBar?.subtitle = title
                     }
+
                 }
+
+                //Challenge: Using the Back Button for Browser History
+                requireActivity().onBackPressedDispatcher.addCallback(viewLifecycleOwner, object :
+                    OnBackPressedCallback(true){
+                    override fun handleOnBackPressed() {
+                        if(webView.canGoBack()){
+                            webView.goBack()
+                        }else{
+                            activity?.onBackPressed()
+                        }
+
+                    }
+                }
+                )
+
             }
         }
 
         return binding.root
     }
+
 }
